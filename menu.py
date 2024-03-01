@@ -154,13 +154,12 @@ while place_order:
                     }                    
                     customer_order.append(order_item)
                     print(customer_order)
-                    break
                 # Tell the customer that their input isn't valid
                 else:
-                    print("Please input a valid number")              
+                    print("Please select a valid sub group")              
             # Tell the customer they didn't select a menu option
             else:
-                print("Your selection was not a sub-option")
+                print("This is not a valid selection")
         else:
             # Tell the customer they didn't select a menu option
             print(f"{menu_category} was not a menu option.")
@@ -168,19 +167,19 @@ while place_order:
         # Tell the customer they didn't select a number
         print("You didn't select a number.")
 
-"""
-THIS IS THE END OF THE CODE THAT ACTUALLY TAKES AN ORDER AND ADDS IT TO THE
-customer_order dictionary
-"""
+# """
+# THIS IS THE END OF THE CODE THAT ACTUALLY TAKES AN ORDER AND ADDS IT TO THE
+# customer_order dictionary
+# """
 
-while True:
+    while True:
         # Ask the customer if they would like to order anything else
         keep_ordering = input("Would you like to keep ordering? (Y)es or (N)o ")
         # 5. Check the customer's input
         match keep_ordering.lower():
             case 'y':
                 place_order = True
-                break
+                #break
             case 'n':
                 place_order = False     # Since the customer decided to stop ordering,
                 print("Thank you for your order.") #thank them for their order                                               
@@ -189,9 +188,9 @@ while True:
             case _:
                 print("Please type 'y' or 'n' to continue.") 
 
-"""
-THIS IS THE END OF THE CODE THAT ASKS THE USER TO CONTINUE OR NOT
-"""
+# """
+# THIS IS THE END OF THE CODE THAT ASKS THE USER TO CONTINUE OR NOT
+# """
 
 # Print out the customer's order
 print("This is what we are preparing for you.\n")
